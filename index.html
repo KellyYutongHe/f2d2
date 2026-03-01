@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content='We propose an algorithm that automatically identifies human-interpretable and transferable prompts that can effectively generate desired concepts given only black-box access to T2I models.'>
-  <meta property="og:title" content="PRISM: Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation"/>
-  <meta property="og:description" content="We propose an algorithm that automatically identifies human-interpretable and transferable prompts that can effectively generate desired concepts given only black-box access to T2I models."/>
-  <meta property="og:url" content="https://kellyyutonghe.github.io/prism/"/>
+  <meta name="description" content='We present F2D2, a framework that simultaneously reduces neural function evaluations for both sampling and likelihood evaluation by two orders of magnitude in flow-based generative models.'>
+  <meta property="og:title" content="F2D2: Joint Distillation for Fast Likelihood Evaluation and Sampling in Flow-based Models"/>
+  <meta property="og:description" content="We present F2D2, a framework that simultaneously reduces neural function evaluations for both sampling and likelihood evaluation by two orders of magnitude in flow-based generative models."/>
+  <meta property="og:url" content="https://kellyyutonghe.github.io/f2d2/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/intro_figure.png" />
+  <meta property="og:image" content="static/images/intro_figure.png" />
   <meta property="og:image:width" content="2048"/>
   <meta property="og:image:height" content="1315"/>
 
@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 
-  <title>PRISM: Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation</title>
-  <link rel="icon" type="image/x-icon" href="static/images/prism_beige_circle.png">
+  <title>F2D2: Joint Distillation for Fast Likelihood Evaluation and Sampling in Flow-based Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,56 +52,37 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PRISM: Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation</h1>
+            <h1 class="title is-1 publication-title">F2D2: Joint Distillation for Fast Likelihood Evaluation and Sampling in Flow-based Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://kellyyutonghe.github.io/" target="_blank">Yutong He</a><sup>1</sup>,</span>
+                <a href="https://keely-ai.github.io/" target="_blank">Xinyue Ai</a><sup>2*†</sup>,</span>
               <span class="author-block">
-                <a href="https://arobey1.github.io/" target="_blank"> Alexander Robey</a><sup>1,2</sup>,</span>
+                <a href="https://kellyyutonghe.github.io/" target="_blank">Yutong He</a><sup>1*</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=oyuTmwoAAAAJ&hl=ja" target="_blank">Naoki Murata</a><sup>3</sup>,</span>
-              <span class="author-block">
-                <a href="https://yidingjiang.github.io/" target="_blank">Yiding Jiang</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://jnwilliams.github.io/" target="_blank">Joshua Nathaniel Williams</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.georgejpappas.org/" target="_blank">George J. Pappas</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.seas.upenn.edu/~hassani/" target="_blank">Hamed Hassani</a><span><sup>2</sup></span>,</span>
-              <span class="author-block">
-                <a href="https://www.yukimitsufuji.com/" target="_blank">Yuki Mitsufuji</a><sup>3,4</sup>,</span>
+                <a href="https://albertgu.com/" target="_blank">Albert Gu</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="https://www.cs.cmu.edu/~rsalakhu/" target="_blank">Ruslan Salakhutdinov</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://zicokolter.com/" target="_blank">J. Zico Kolter</a><sup>1,5</sup>,</span>
+                <a href="https://zicokolter.com/" target="_blank">J. Zico Kolter</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://nmboffi.github.io/" target="_blank">Nicholas M. Boffi</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://msimchowitz.github.io/" target="_blank">Max Simchowitz</a><sup>1</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Carnegie Mellon University, <sup>2</sup>University of Pennsylvania, <sup>3</sup>Sony AI, <sup>4</sup>Sony Group Corporation, <sup>5</sup>Bosch Center for AI<br></span>
-              <!-- <span class="eql-cntrb"><small><br><sup>❋</sup>Equal Contribution</small></span> -->
-              <!-- <span class="eql-cntrb"><small><br><sup>♨</sup>Internship at Sony AI</small></span> -->
-              <span class="eql-cntrb"><br><b>TMLR 2025</b></span>
+              <span class="author-block"><sup>1</sup>Carnegie Mellon University, <sup>2</sup>Peking University<br></span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Work done at CMU</small></span>
+              <span class="eql-cntrb"><br><b>ICLR 2026</b></span>
             </div>
-            
+
                 <div class="column has-text-centered">
                   <div class="publication-links">
-                       <!-- PDF link -->
-                    
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-                  
+
                   <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/2403.19103" target="_blank"
+                    <a href="https://arxiv.org/abs/2512.02636" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -110,7 +91,7 @@
                   </a>
                 </span>
                     <span class="link-block">
-                      <a href="https://openreview.net/pdf?id=IVYVDN6pJ6" target="_blank"
+                      <a href="https://openreview.net/pdf?id=8uZ5UdIul2" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -118,15 +99,32 @@
                       <span>Paper</span>
                     </a>
                   </span>
-
-                  <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/KellyYutongHe/prism_demo" target="_blank"
+                    <a href="https://openreview.net/forum?id=8uZ5UdIul2" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-comments"></i>
+                    </span>
+                    <span>OpenReview</span>
+                  </a>
+                </span>
+
+                  <!-- Code links -->
+                  <span class="link-block">
+                    <a href="https://github.com/Keely-Ai/F2D2" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>PyTorch Code</span>
+                  </a>
+                </span>
+                  <span class="link-block">
+                    <a class="external-link button is-normal is-rounded is-dark" style="opacity: 0.6; cursor: not-allowed;">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>JAX Code (coming soon)</span>
                   </a>
                 </span>
 
@@ -139,42 +137,21 @@
 </section>
 
 
-<!-- Teaser image-->
+<!-- TL;DR teaser -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/intro-1.png">
-      <h2 class="subtitle has-text-centered">
-        Given a set of reference images, our method, PRISM, is capable of creating human-interpretable and accurate prompts for the desired concept that are also transferable to both open-sourced and closed-sourced text-to-image models.
+    <div class="hero-body has-text-centered">
+      <h2 class="subtitle">
+        <span style="font-size:1.15em;">
+          Flow-based generative models need 100–1000 NFEs just to compute one likelihood — making downstream applications prohibitively expensive.
+          F2D2 cuts this to <b>2–8 NFEs</b> for <em>both</em> sampling and likelihood, simultaneously.
+          As a result, a <b>2-step model with self-guidance outperforms a 1024-step baseline</b>.
+        </span>
       </h2>
     </div>
   </div>
 </section>
-
-
-<!-- <section class="hero is-small">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <img src="static/images/intro_figure.png" width="1920"/>
-            <h2 class="subtitle has-text-centered">
-              CAC as a plugin to existing methods for localized text-to-image generation. CAC improves upon diverse types of localization (bounding boxes, semantic segmentation maps and localized styles) with different base models (Stable Diffusion and GLIGEN).
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/extra_arbitrary.png" height="1920"/>
-            <h2 class="subtitle has-text-centered">
-              CAC as a plugin to existing methods for localized text-to-image generation. CAC improves upon diverse types of localization (bounding boxes, semantic segmentation maps and localized styles) with different base models (Stable Diffusion and GLIGEN).
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser image -->
+<!-- End TL;DR teaser -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -184,7 +161,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Prompt engineering is effective for controlling the output of text-to-image (T2I) generative models, but it is also laborious due to the need for manually crafted prompts. This challenge has spurred the development of algorithms for automated prompt generation. However, these methods often struggle with transferability across T2I models, require white-box access to the underlying model, and produce non-intuitive prompts. In this work, we introduce PRISM, an algorithm that automatically identifies human-interpretable and transferable prompts that can effectively generate desired concepts given only black-box access to T2I models. Inspired by large language model (LLM) jailbreaking, PRISM leverages the in-context learning ability of LLMs to iteratively refine the candidate prompts distribution for given reference images. Our experiments demonstrate the versatility and effectiveness of PRISM in generating accurate prompts for objects, styles and images across multiple T2I models, including Stable Diffusion, DALL-E, and Midjourney.
+            Log-likelihood evaluation enables important capabilities in generative models, including model comparison, certain fine-tuning objectives, and many downstream applications. Yet paradoxically, some of today's best generative models – diffusion and flow-based models – still require hundreds to thousands of neural function evaluations (NFEs) to compute a single likelihood. While recent distillation methods have successfully accelerated sampling to just a few steps, they achieve this at the cost of likelihood tractability: existing approaches either abandon likelihood computation entirely or still require expensive integration over full trajectories. We present fast flow joint distillation (F2D2), a framework that simultaneously reduces the number of NFEs required for both sampling and likelihood evaluation by two orders of magnitude. Our key insight is that in continuous normalizing flows, the coupled ODEs for sampling and likelihood are computed from a shared underlying velocity field, allowing us to jointly distill both the sampling trajectory and cumulative divergence using a single flow map. F2D2 is modular, compatible with existing flow-based few-step sampling models, and requires only an additional divergence prediction head. Experiments demonstrate F2D2's capability of achieving accurate log-likelihood with few-step evaluations while maintaining high sample quality, solving a long-standing computational bottleneck in flow-based generative models. As an application of our approach, we propose a lightweight self-guidance method that enables a 2-step MeanFlow to outperform a 1024 step flow matching model with only a single additional backward NFE.
           </p>
         </div>
       </div>
@@ -194,246 +171,266 @@
 <!-- End paper abstract -->
 
 
-<!-- Method figure -->
-  <!-- <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered is-four-fifths">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Proposed Method</h2>
-          <img src="static/images/pipeline.png">
-          <h2 class="subtitle has-text-justified">
-            <p>
-            CAC as a plugin to existing methods for localized text-to-image generation. CAC improves upon diverse types of localization (bounding boxes, semantic segmentation maps and localized styles) with different base models (Stable Diffusion and GLIGEN).
-            </p>
-          </h2>
-        </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="hero teaser">
+<!-- Method -->
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">Proposed Method</h2>
-      <img src="static/images/method-1.png">
-      <h2 class="subtitle has-text-centered">
-        An illustration of PRISM. The label “System” indicates the system prompts setups for the VLMs.
-      </h2>
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <div class="content has-text-justified">
+      <p>
+        In continuous normalizing flows (CNFs), sampling and likelihood computation are governed by two <em>coupled</em> ODEs that share the same underlying velocity field v<sub>θ</sub>:
+      </p>
+      <ul>
+        <li><b>Sampling:</b> dx<sub>t</sub>/dt = v<sub>θ</sub>(x<sub>t</sub>, t)</li>
+        <li><b>Likelihood:</b> d(log p<sub>t</sub>)/dt = −div(v<sub>θ</sub>(x<sub>t</sub>, t))</li>
+      </ul>
+      <p>
+        This shared structure means both can be distilled together. F2D2 learns a <b>joint flow map</b> Φ<sub>Y</sub> over the joint state y<sub>t</sub> = (x<sub>t</sub>, z<sub>t</sub>)<sup>⊤</sup>, with a linear parametrization for each subsystem: Φ<sub>X</sub>(x̂<sub>t</sub>, t, s) = x̂<sub>t</sub> + (s−t) u<sub>θ</sub>(x̂<sub>t</sub>, t, s) for sampling, and Φ<sub>Z</sub>(x<sub>t</sub>, t, s) = z<sub>t</sub> + (s−t) D<sub>θ</sub>(x<sub>t</sub>, t, s) for the cumulative log-likelihood. A single shared backbone f<sub>θ</sub> outputs two heads — u<sub>θ</sub> for the average sampling velocity and D<sub>θ</sub> for the average divergence — trained with four complementary losses:
+      </p>
+      <ul>
+        <li><b>L<sub>VM</sub></b> (velocity matching): the standard flow matching loss or teacher velocity matching loss, enforcing the flow map to recover the instantaneous velocity u<sub>θ</sub>(x, t, t) = v(x, t).</li>
+        <li><b>L<sub>u</sub></b> (sampling flow map condition): enforces one of the three flow map conditions (semigroup, Eulerian, or Lagrangian) on the sampling head, depending on the instantiation.</li>
+        <li><b>L<sub>div</sub></b> (divergence matching): mirrors L<sub>VM</sub> for the divergence head, enforcing the flow map to recover the instantaneous divergence D<sub>θ</sub>(x, t, t) = div(u<sub>θ</sub>(x, t, t)).</li>
+        <li><b>L<sub>D</sub></b> (likelihood flow map condition): mirrors L<sub>u</sub> for the divergence head, ensuring the joint map Φ<sub>Y</sub> satisfies the requisite flow map conditions.</li>
+      </ul>
+      <p>
+        F2D2 is <b>modular</b>: it extends any existing few-step flow map model by adding only a lightweight divergence head. We provide instantiations for all three flow map conditions:
+      </p>
+      <ul>
+        <li><b>Shortcut-F2D2</b> — built on <a href="https://arxiv.org/abs/2410.12557" target="_blank">Shortcut Models</a>, using the semigroup property to enforce consistency across time intervals.</li>
+        <li><b>MeanFlow-F2D2</b> — built on <a href="https://arxiv.org/abs/2505.13447" target="_blank">MeanFlow</a>, leveraging the MeanFlow identity, which solves the Eulerian equation.</li>
+        <li><b>LSD-F2D2</b> — built on <a href="https://arxiv.org/abs/2503.09569" target="_blank">Lagrangian Self-Distillation (LSD)</a>, using the Lagrangian equation.</li>
+      </ul>
     </div>
   </div>
 </section>
-<!-- End method figure -->
+<!-- End method -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <h2 class="title is-3 has-text-centered">Demo</h2>
-    <div class="container is-max-desktop">
-      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-       <!-- <div class="item"> -->
-        <img src="static/images/object-1.png"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative results for object oriented personalized T2I generation on DreamBooth dataset.
-        </h2>
-      </div>
-      <!-- <div class="item">
-        <img src="static/images/extra_arbitrary2.png"/>
-        <h2 class="subtitle has-text-centered">
-          CAC is versatile and can be applied to various application scenarios.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/extra_arbitrary3.png"/>
-        <h2 class="subtitle has-text-centered">
-          Examples of generated images with a variety of different types of user inputs and applications.
-        </h2>
-      </div> -->
-  <!-- </div> -->
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Image carousel -->
-<section class="hero is-small">
+<!-- Sample quality results -->
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-       <!-- <div class="item"> -->
-        <img src="static/images/style-1.png"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative results for object oriented personalized T2I generation.
-        </h2>
-      <!-- </div> -->
-      <!-- <div class="item">
-        <img src="static/images/coco2.png"/>
-        <h2 class="subtitle has-text-centered">
-          Examples and baseline comparison of generated images based on bounding box information.
-        </h2>
-      </div> -->
-  <!-- </div> -->
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <!-- <div id="results-carousel" class="carousel results-carousel">
-       <div class="item"> -->
-        <img src="static/images/img-1.png"/>
-        <h2 class="subtitle has-text-centered">
-          Image inversion results for different methods on different T2I models.
-        </h2>
-      </div>
-      <!-- <div class="item">
-        <img src="static/images/cc5002.png"/>
-        <h2 class="subtitle has-text-centered">
-          Examples and baseline comparison of compositional generation.
-        </h2>
-      </div>
-  </div> -->
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <!-- <div id="results-carousel" class="carousel results-carousel">
-       <div class="item"> -->
-        <img src="static/images/edit-1.png"/>
-        <h2 class="subtitle has-text-centered">
-          Prompt editing demonstration with Midjourney.
-        </h2>
-      </div>
-      <!-- <div class="item">
-        <img src="static/images/cityscapes1.png"/>
-        <h2 class="subtitle has-text-centered">
-          Examples and baseline comparison of generated images based on semantic segmentation map information.
-        </h2>
-      </div>
-  </div> -->
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <!-- <div id="results-carousel" class="carousel results-carousel">
-       <div class="item"> -->
-        <img src="static/images/multiconcept.png"/>
-        <h2 class="subtitle has-text-centered">
-          Multi-concept generation demonstration with Midjourney.
-        </h2>
-      </div>
-      <!-- <div class="item">
-        <img src="static/images/cityscapes1.png"/>
-        <h2 class="subtitle has-text-centered">
-          Examples and baseline comparison of generated images based on semantic segmentation map information.
-        </h2>
-      </div>
-  </div> -->
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+      <h2 class="title is-3 has-text-centered">Sample Quality</h2>
+      <img src="static/images/fig_samples.png" alt="CIFAR-10 sample quality comparison" style="max-width: 100%; height: auto;"/>
+      <p class="subtitle has-text-centered">
+        CIFAR-10 samples across 1–8 NFEs. F2D2 variants maintain visual quality at all step counts, while baselines degrade substantially with fewer steps.
+      </p>
     </div>
   </div>
-</section> -->
-<!-- End youtube video -->
+</section>
+<!-- End sample quality results -->
 
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+<!-- Quantitative results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+    <div class="content">
+      <h3 class="title is-5 mt-5">CIFAR-10</h3>
+      <p class="has-text-centered">NLL and FID results on CIFAR-10 dataset with different numbers of Euler steps. The flow matching model here, which achieves BPD 3.12 as the NLL with 1024 steps and FID 2.60 with 200 steps, is also the teacher model we use in our Shortcut-Distill. For NLL, the closer to the teacher result (3.12 BPD) the better, and for FID, the lower the better. We denote the best results in <strong>bold</strong>, the second best with <u>underlines</u>, the overall best results in <span style="border: 1px solid black; padding: 1px 4px;">boxes</span> and invalid predictions in <span style="color: lightgray;">gray color</span>.</p>
+      <div class="table-container">
+        <table class="table is-bordered is-hoverable is-fullwidth has-text-centered">
+          <thead>
+            <tr>
+              <th rowspan="2" class="has-text-centered">Method</th>
+              <th colspan="2" class="has-text-centered">8 Steps</th>
+              <th colspan="2" class="has-text-centered">4 Steps</th>
+              <th colspan="2" class="has-text-centered">2 Steps</th>
+              <th colspan="2" class="has-text-centered">1 Step</th>
+            </tr>
+            <tr>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flow Matching</td>
+              <td><span style="color:lightgray;">-9.93</span></td><td>20.63</td>
+              <td><span style="color:lightgray;">-24.01</span></td><td>64.27</td>
+              <td><span style="color:lightgray;">-52.85</span></td><td>146.24</td>
+              <td><span style="color:lightgray;">-111.19</span></td><td>313.54</td>
+            </tr>
+            <tr>
+              <td>Shortcut Model</td>
+              <td><span style="color:lightgray;">-12.07</span></td><td>7.10</td>
+              <td><span style="color:lightgray;">-28.03</span></td><td>9.63</td>
+              <td><span style="color:lightgray;">-60.01</span></td><td>16.04</td>
+              <td><span style="color:lightgray;">-124.15</span></td><td>27.28</td>
+            </tr>
+            <tr>
+              <td>Shortcut-Distill (Ours)</td>
+              <td><span style="color:lightgray;">-11.42</span></td><td>5.01</td>
+              <td><span style="color:lightgray;">-26.82</span></td><td>5.41</td>
+              <td><span style="color:lightgray;">-57.72</span></td><td>7.13</td>
+              <td><span style="color:lightgray;">-119.42</span></td><td>12.75</td>
+            </tr>
+            <tr>
+              <td>MeanFlow</td>
+              <td><span style="color:lightgray;">-9.00</span></td><td><u>4.34</u></td>
+              <td><span style="color:lightgray;">-21.26</span></td><td><u>5.14</u></td>
+              <td><span style="color:lightgray;">-46.63</span></td><td><u>2.84</u></td>
+              <td><span style="color:lightgray;">-97.59</span></td><td><strong>2.80</strong></td>
+            </tr>
+            <tr style="border-top: 2px solid #dbdbdb;">
+              <td>Shortcut-F2D2 (Ours)</td>
+              <td><u>3.07</u></td><td>8.78</td>
+              <td><strong>3.26</strong></td><td>10.21</td>
+              <td><strong>2.73</strong></td><td>15.58</td>
+              <td>0.20</td><td>27.35</td>
+            </tr>
+            <tr>
+              <td>Shortcut-Distill-F2D2 (Ours)</td>
+              <td><span style="border: 1px solid black; padding: 1px 4px;"><strong>3.12</strong></span></td><td>5.68</td>
+              <td><u>2.87</u></td><td>5.96</td>
+              <td><u>2.38</u></td><td>7.35</td>
+              <td><u>1.62</u></td><td>13.76</td>
+            </tr>
+            <tr>
+              <td>MeanFlow-F2D2 (Ours)</td>
+              <td>2.38</td><td><strong>3.78</strong></td>
+              <td>1.34</td><td><strong>4.37</strong></td>
+              <td>1.63</td><td><span style="border: 1px solid black; padding: 1px 4px;"><strong>2.59</strong></span></td>
+              <td><strong>3.51</strong></td><td><u>3.02</u></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      <h3 class="title is-5 mt-5">ImageNet 64×64</h3>
+      <p class="has-text-centered">Negative log-likelihood (NLL) measured in BPD and FID results on ImageNet 64×64 dataset with different numbers of Euler steps. The flow matching model here, which achieves BPD 3.34 as the NLL with 1024 steps and FID 13.09 with 200 steps, is also the teacher model we use in our Shortcut-Distill. For NLL, the closer to the teacher result (3.34 BPD) the better, and for FID, the lower the better. We denote the best results in <strong>bold</strong> and invalid predictions in <span style="color: lightgray;">gray color</span>.</p>
+      <div class="table-container">
+        <table class="table is-bordered is-hoverable is-fullwidth has-text-centered">
+          <thead>
+            <tr>
+              <th rowspan="2" class="has-text-centered">Method</th>
+              <th colspan="2" class="has-text-centered">8 Steps</th>
+              <th colspan="2" class="has-text-centered">4 Steps</th>
+              <th colspan="2" class="has-text-centered">2 Steps</th>
+              <th colspan="2" class="has-text-centered">1 Step</th>
+            </tr>
+            <tr>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flow Matching</td>
+              <td><span style="color:lightgray;">-6.41</span></td><td>31.60</td>
+              <td><span style="color:lightgray;">-15.87</span></td><td>68.55</td>
+              <td><span style="color:lightgray;">-35.23</span></td><td>170.00</td>
+              <td><span style="color:lightgray;">-74.54</span></td><td>363.39</td>
+            </tr>
+            <tr>
+              <td>Shortcut-Distill (Ours)</td>
+              <td><span style="color:lightgray;">-9.03</span></td><td><strong>19.47</strong></td>
+              <td><span style="color:lightgray;">-22.30</span></td><td><strong>21.73</strong></td>
+              <td><span style="color:lightgray;">-49.01</span></td><td><strong>28.12</strong></td>
+              <td><span style="color:lightgray;">-102.07</span></td><td><strong>42.72</strong></td>
+            </tr>
+            <tr>
+              <td>Shortcut-Distill-F2D2 (Ours)</td>
+              <td><strong>3.51</strong></td><td><u>21.91</u></td>
+              <td><strong>3.94</strong></td><td><u>24.05</u></td>
+              <td><strong>3.97</strong></td><td><u>29.83</u></td>
+              <td><strong>1.54</strong></td><td><u>44.02</u></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="title is-5 mt-5">CelebA-64</h3>
+      <p class="has-text-centered">Negative log-likelihood (NLL) measured in BPD and FID results on CelebA-64 dataset with different numbers of Euler steps. The flow matching model here achieves BPD 1.75 in 1024 steps and FID 2.48 in 200 steps. For NLL, closer to the flow matching estimate is better; for FID, lower is better. Best in <strong>bold</strong>; invalid in <span style="color: lightgray;">gray</span>.</p>
+      <div class="table-container">
+        <table class="table is-bordered is-hoverable is-fullwidth has-text-centered">
+          <thead>
+            <tr>
+              <th rowspan="2" class="has-text-centered">Method</th>
+              <th colspan="2" class="has-text-centered">8 Steps</th>
+              <th colspan="2" class="has-text-centered">4 Steps</th>
+              <th colspan="2" class="has-text-centered">2 Steps</th>
+              <th colspan="2" class="has-text-centered">1 Step</th>
+            </tr>
+            <tr>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+              <th>NLL</th><th>FID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flow Matching</td>
+              <td><span style="color:lightgray;">-6.88</span></td><td>30.60</td>
+              <td><span style="color:lightgray;">-16.39</span></td><td>58.14</td>
+              <td><span style="color:lightgray;">-36.46</span></td><td>120.65</td>
+              <td><span style="color:lightgray;">-77.51</span></td><td>181.23</td>
+            </tr>
+            <tr>
+              <td>LSD</td>
+              <td><span style="color:lightgray;">-6.78</span></td><td><u>3.33</u></td>
+              <td><span style="color:lightgray;">-14.89</span></td><td><u>4.04</u></td>
+              <td><span style="color:lightgray;">-32.72</span></td><td><u>6.32</u></td>
+              <td><span style="color:lightgray;">-69.83</span></td><td><u>12.96</u></td>
+            </tr>
+            <tr>
+              <td>LSD-F2D2 (Ours)</td>
+              <td><strong>1.64</strong></td><td><strong>2.41</strong></td>
+              <td><strong>1.75</strong></td><td><strong>2.75</strong></td>
+              <td><strong>1.73</strong></td><td><strong>3.86</strong></td>
+              <td><strong>1.64</strong></td><td><strong>6.94</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </div>
-</section> -->
-<!-- End video carousel -->
+</section>
+<!-- End quantitative results -->
 
 
-<!-- <section class="hero is-small">
+<!-- 2D density estimation -->
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Ablation Study: The Fidelity-Controllability Trade-offs</h2>
-      <img src="static/images/ablation_example.png">
-      <h2 class="subtitle has-text-centered">
-        Comparison of the fidelity-controllability trade-offs with and without CAC.
-        With CAC applied, the model is able to reach a sweet spot where the generated images appear more
-        realistic while maintaining better consistency with the bounding box information.
-      </h2>
+      <h2 class="title is-3 has-text-centered">2D Density Estimation</h2>
+      <img src="static/images/fig_2d.png" alt="2D checkerboard density estimation" style="max-width: 100%; height: auto;"/>
+      <p class="subtitle has-text-centered">
+        Density estimation on a 2D checkerboard. LSD-F2D2 accurately recovers the target density distribution with only <b>1 NFE</b>, preserving spatial structure and density values.
+      </p>
     </div>
   </div>
-</section> -->
+</section>
+<!-- End 2D density estimation -->
 
 
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-
-      </div>
+<!-- Self-guidance application -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Application: Self-Guidance</h2>
+    <div class="content has-text-justified">
+      <p>
+        Efficient likelihood computation unlocks new inference-time strategies. We propose a lightweight <b>self-guidance</b> method that optimizes the initial noise x<sub>0</sub> to maximize likelihood before running sampling — requiring only a single additional backward pass through the divergence head. This guidance dramatically improves sample quality at no architectural cost.
+      </p>
+      <p>
+        <b>Key result:</b> a 2-step MeanFlow-F2D2 model <em>with</em> self-guidance surpasses a 1024-step standard flow matching model on CIFAR-10, using orders of magnitude fewer NFEs.
+      </p>
     </div>
-  </section> -->
-<!--End paper poster -->
+    <div class="has-text-centered mt-4">
+      <img src="static/images/fig_selfguidance.png" alt="Self-guidance results" style="max-width: 50%; height: auto;"/>
+      <p class="subtitle has-text-centered mt-2">
+        FID vs. NFEs for MeanFlow-F2D2 with and without self-guidance. Guidance consistently improves quality, and the 2-step guided model outperforms the 1024-step baseline.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End self-guidance -->
 
 
 <!--BibTex citation -->
@@ -441,15 +438,13 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @article{
-          he2025automated,
-          title={Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation},
-          author={Yutong He and Alexander Robey and Naoki Murata and Yiding Jiang and Joshua Nathaniel Williams and George J. Pappas and Hamed Hassani and Yuki Mitsufuji and Ruslan Salakhutdinov and J Zico Kolter},
-          journal={Transactions on Machine Learning Research},
-          issn={2835-8856},
-          year={2025},
-          url={https://openreview.net/forum?id=IVYVDN6pJ6},
-          note={}
+        @inproceedings{
+          ai2026joint,
+          title={Joint Distillation for Fast Likelihood Evaluation and Sampling in Flow-based Models},
+          author={Xinyue Ai and Yutong He and Albert Gu and Ruslan Salakhutdinov and J Zico Kolter and Nicholas Matthew Boffi and Max Simchowitz},
+          booktitle={The Fourteenth International Conference on Learning Representations},
+          year={2026},
+          url={https://openreview.net/forum?id=8uZ5UdIul2}
         }
       </code></pre>
     </div>
